@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>form</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="header">
+         <h1 class='title'>Регистрация</h1>
+      </div>
+      <form action="#" novalidate>
+         <label class="text">
+            Имя:
+            <input class = "field name inputText" type="text">
+         </label>
+         <label class="text">
+            Фамилия:
+            <input class = "field lastName inputText" type="text">
+         </label>
+         <label class="text">
+            Дата рождения:
+            <input class = "field birthDate" type="date">
+         </label>
+         <label class="text">
+            Email:
+            <input class = "field email" type="email">
+         </label>
+         <label class="text">
+            Телефон:
+            <input class = "field tel" type="tel">
+         </label>
+         <fieldset class = "radiobox">
+            <legend class="text">Направление:</legend>
+            <label class="text">
+               <input type="radio" name="direction" id="developer">
+               Разработчик
+            </label>
+            <label class="text">
+               <input type="radio" name="direction" id="manager">
+               Менеджер
+            </label>
+            <label class="text">
+            <input type="radio" name="direction" id="tester">
+               Тестировщик
+            </label>
+         </fieldset>
+         <label class="text">
+            Город:
+            <input class = "field city inputText" type="text">
+         </label>
+         <div class="btn">
+            <input class="btn-reset" type="reset" value="Очистить">
+            <input class="btn-submit" type="submit" value="Отправить">
+          </div>
+      </form>
+   </div>
+   <script src="./app.js"></script>
+</body>
+
+</html>
